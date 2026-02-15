@@ -1,0 +1,12 @@
+*.exe
+*.obj
+*.res
+*.manifest
+*.ini
+# Visual Studio / MSVC folders
+.vs/
+out/
+build/
+# Temporary files
+*.tmp
+*.log

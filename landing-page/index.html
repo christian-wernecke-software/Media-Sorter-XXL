@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Sorter XXL - The World's Fastest Sorting App</title>
+    <style>
+        :root {
+            --primary-orange: #FF7800;
+            --primary-blue: #0087FF;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --bg-white: #ffffff;
+            --bg-gray: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 40px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--primary-orange);
+        }
+
+        .logo span {
+            color: var(--primary-blue);
+        }
+
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, var(--primary-orange), var(--primary-blue));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--primary-orange);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 120, 0, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 120, 0, 0.4);
+        }
+
+        .features {
+            padding: 60px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-box {
+            padding: 30px;
+            border-radius: 20px;
+            background: var(--bg-gray);
+            border: 1px solid #eee;
+            transition: transform 0.3s;
+        }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-box h3 {
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .highlight-blue {
+            color: var(--primary-blue);
+            font-weight: bold;
+        }
+
+        .highlight-orange {
+            color: var(--primary-orange);
+            font-weight: bold;
+        }
+
+        .ai-section {
+            background: linear-gradient(135deg, #f0f7ff 0%, #fff0e6 100%);
+            padding: 60px 0;
+            border-radius: 30px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .ai-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: white;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .legal-section {
+            display: none;
+            padding: 60px 0;
+            border-top: 1px solid #eee;
+        }
+
+        .legal-section:target {
+            display: block;
+        }
+
+        footer {
+            padding: 60px 0 20px;
+            border-top: 1px solid #eee;
+            margin-top: 60px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .tech-details {
+            font-size: 13px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+
+            .hero {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container">
+        <div class="logo">Media Sorter <span>XXL</span></div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1>Organization at the touch of a button.</h1>
+            <p>Perhaps the fastest app in the world to sort your photos and videos intelligently.</p>
+            <a href="#" class="cta-button">Download Now</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-box">
+                <span class="highlight-orange">Extremely Small</span>
+                <h3>No bloat</h3>
+                <p>At only about <span class="highlight-orange">600 KB</span>, Media Sorter XXL is a true heavyweight in
+                    terms of efficiency. No installation required – just launch and go.</p>
+            </div>
+
+            <div class="feature-box">
+                <span class="highlight-blue">Incredibly Fast</span>
+                <h3>High-Speed Performance</h3>
+                <p>Why are we so fast? Media Sorter XXL uses a <span class="highlight-blue">multi-threaded
+                        architecture</span> that utilizes all cores of your CPU simultaneously. An intelligent cache
+                    system for geocoding data ensures that the same locations are not queried twice.</p>
+                <div class="tech-details">
+                    <strong>Tech Stack:</strong> C++, Win32 API, GDI+, Multi-threading (Parallel Worker Pool).
+                </div>
+            </div>
+
+            <div class="feature-box">
+                <span class="highlight-orange">Easy to Control</span>
+                <h3>One click is enough</h3>
+                <p>No complicated menus. Select source, select target, press start. The software automatically detects
+                    capture dates and locations (GPS) and sorts everything into a perfect folder structure.</p>
+            </div>
+        </section>
+
+        <section class="ai-section">
+            <div class="ai-badge">AI DEVELOPED</div>
+            <h2>Developed & Optimized by AI</h2>
+            <p>Media Sorter XXL was conceived, programmed, and tuned for maximum speed by the AI "Antigravity". Every
+                line of code is optimized for efficiency and user-friendliness.</p>
+        </section>
+
+        <section
+            style="padding: 60px 0; text-align: center; background-color: #f0f7ff; border-radius: 30px; margin-bottom: 40px;">
+            <h2>100% Transparent. 100% Open Source.</h2>
+            <p style="margin-bottom: 30px; color: var(--text-light);">Because this software was developed by AI, we
+                believe in full transparency. Explore the source code, verify the performance optimizations, and see how
+                it works under the hood.</p>
+            <a href="https://github.com/[Your-Repo-Here]" class="cta-button"
+                style="background-color: var(--primary-blue); box-shadow: 0 4px 15px rgba(0, 135, 255, 0.3);">View
+                Source Code on GitHub</a>
+        </section>
+
+
+        <!-- Disclaimer Section -->
+        <section id="disclaimer" class="legal-section">
+            <h2>Disclaimer</h2>
+            <div style="background-color: #fff5f5; border-left: 4px solid #f56565; padding: 20px; border-radius: 8px;">
+                <p><strong>Use at Your Own Risk:</strong> Media Sorter XXL is provided "as is" and without any
+                    warranties of any kind, whether express or implied. The software performs operations on your local
+                    files; we do not assume any liability for data loss, hardware damage, or any other issues arising
+                    from its use.</p>
+                <p style="margin-top: 10px;">By using this software, you agree that the entire risk as to the quality
+                    and performance of the program is with you.</p>
+            </div>
+        </section>
+
+        <!-- Legal Notice Section -->
+        <section id="legal-notice" class="legal-section">
+            <h2>Legal Notice</h2>
+            <div style="margin-top: 15px;">
+                <p><strong>Contact Details:</strong></p>
+                <p>Christian Wernecke Software</p>
+                <p>Kleibreite 18</p>
+                <p>59394 Nordkirchen</p>
+                <p>GERMANY</p>
+                <p>Email: info@unionsoft.de</p>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy" class="legal-section">
+            <h2>Privacy Policy</h2>
+            <h3>General Information</h3>
+            <p>The protection of your personal data is very important to us. We process your data in accordance with the
+                applicable data protection laws.</p>
+
+            <p>The responsible party for this website and the software is the person/company mentioned in the Legal
+                Notice.</p>
+
+            <h3>Data Processing</h3>
+            <p>The core functionality of Media Sorter XXL processes all your media files <strong>locally</strong> on
+                your computer. No photos, videos, or metadata are uploaded to our servers or any cloud service.</p>
+
+            <h3>Reverse Geocoding (OpenStreetMap)</h3>
+            <p>To provide the location-based sorting feature, the app sends GPS coordinates (Latitude/Longitude) to the
+                <strong>Nominatim service (OpenStreetMap)</strong>. This is necessary to retrieve city or town names.
+                During this process, technical data (such as your IP address) is transmitted to OpenStreetMap. No other
+                personal data is shared.
+            </p>
+
+            <h3>No Cookies / No Tracking</h3>
+            <p>This landing page does not use any cookies, tracking pixels, or analytical tools.</p>
+
+            <h3>Your Rights</h3>
+            <p>You have the right to information, correction, deletion, and restriction of processing of your personal
+                data. You also have the right to object to processing and the right to data portability. To exercise
+                these rights, please contact us via the email address listed in the Legal Notice.</p>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-links">
+            <a href="#disclaimer" style="color: #f56565; font-weight: bold;">Disclaimer (Usage at Own Risk)</a>
+            <a href="#legal-notice">Legal Notice</a>
+            <a href="#privacy-policy">Privacy Policy</a>
+        </div>
+        <p>&copy; 2026 Media Sorter XXL. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
