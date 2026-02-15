@@ -14,7 +14,11 @@ A C++ application to sort images and videos by date and location.
 - Git (for version control)
 
 ## Usage
-1. Compile the project using `build.bat`.
+1. **Download**: Get the latest version from the [Releases](https://github.com/christian-wernecke-software/Media-Sorter-XXL/releases) page.
 2. Run `Media Sorter XXL.exe`.
 3. Select source and destination folders.
 4. Click "Sort" to begin.
+
+## Development
+1. Compile the project using `build.bat`.
+2. Ensure you have the MSVC compiler and Windows SDK installed.
