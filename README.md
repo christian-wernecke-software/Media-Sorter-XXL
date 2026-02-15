@@ -22,3 +22,6 @@ A C++ application to sort images and videos by date and location.
 ## Development
 1. Compile the project using `build.bat`.
 2. Ensure you have the MSVC compiler and Windows SDK installed.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
